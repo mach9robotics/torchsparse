@@ -12,7 +12,7 @@ from torch.utils.cpp_extension import (
 )
 
 # from torchsparse import __version__
-TORCH_CUDA_ARCH_LIST = os.environ.get("TORCH_CUDA_ARCH_LIST", "8.0 8.6 8.9 9.0 12.0+PTX")
+TORCH_CUDA_ARCH_LIST = os.environ.get("TORCH_CUDA_ARCH_LIST", "8.0 8.6 8.9 9.0+PTX")
 os.environ["TORCH_CUDA_ARCH_LIST"] = TORCH_CUDA_ARCH_LIST
 
 version_file = open("./torchsparse/version.py")
